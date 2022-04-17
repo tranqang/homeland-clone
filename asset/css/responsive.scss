@@ -1,0 +1,132 @@
+@media (max-width: 992px) {
+    .nav__menu{
+        display: none;
+    }
+    .mobile__menu__icon{
+        display: block;
+    }
+    .section-content{
+        padding: 48px 0;
+    }
+}
+@media (min-width: 993px) {
+    .mobile__menu__icon{
+        display: none;
+    }
+}
+.mobile__menu__icon{
+    font-size: 2.5rem;
+    color: #fff;
+    i{
+        padding: 16px 0;
+        cursor: pointer;
+    }
+}
+.mobile__menu__fade,.mobile__menu__nav{
+    visibility: hidden;
+    opacity: 0;
+}
+#isShowMobileMenu:checked~.mobile__menu__nav{
+    visibility: visible;
+    opacity: 1;
+    right: 0;
+}
+
+#isShowMobileMenu:checked~.mobile__menu__fade{
+    visibility: visible;
+    opacity: 0.4;
+}
+
+
+.mobile__menu__nav{
+    padding: 40px;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    right: -300px;
+    
+    i{
+        color: rgba(0, 0, 0, 0.6);
+        display: block;
+        position: absolute;
+        font-size: 3rem;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        &:hover{
+            color: #333;
+        }
+    }
+    ul{
+        display: block;
+        a,p{
+            color: rgba(0, 0, 0, 0.6);
+            display: block;
+            padding: 10px 20px;
+            font-size: 2rem;
+            margin: 0;
+            &:hover{
+                color: #1f3c88;
+
+            }
+        }
+        li.active>a{
+                color: #1f3c88;
+            }
+    }
+}
+.mobile__menu__fade{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+}
+
+
+.mobile__menu__nav
+{
+    .properties{
+        i{
+            font-size: 1.5rem;
+            padding: 10px;
+            border-radius: 50%;
+            position: absolute;
+            top: 24px;
+            transform: translateY(-50%);
+            &:hover{
+                background-color: #f8f9fa;
+            }
+        }
+        .list__props{
+            padding-left: 20px;
+            display: none;
+            a,p{
+                font-size: 1.6rem;
+            }
+            .sub-menu{
+                position: relative;
+                ul{
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
+    
+}
+#isShowProps~ul{
+    display: none;
+}
+#isShowSubs~ul{
+    display: none;
+}
+#isShowProps:checked~ul{
+    display: block;
+}
+#isShowSubs:checked~ul{
+    display: block;
+}

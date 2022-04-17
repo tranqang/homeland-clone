@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homeland</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./asset/js/app.js"></script>
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="header-wrap">
+        <div id="header" class="mt-5">
+            <div class="container py-1">
+                <div class="header__content row">
+                    <div class="col-8 col-md-8 col-lg-4">
+                        <a href="./index.html" class="logo">
+                            <strong>Homeland<span class="text-danger">.</span> </strong>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-lg-8 nav__menu">
+                        <ul class="nav justify-content-end">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="#">Buy</a></li>
+                            <li><a href="#">Rent</a></li>
+                            <li class="properties"><a href="#">Properties <i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="properties__nav">
+                                    <li><a href="#">Condo</a></li>
+                                    <li><a href="#">Property Land</a></li>
+                                    <li><a href="#">Commercial Building</a></li>
+                                    <li class="submenu"><a href="#">Sub Menu <i class="fa-solid fa-angle-right"></i></a>
+                                        <ul class="submenu__nav">
+                                            <li><a href="#">Menu One</a></li>
+                                            <li><a href="#">Menu Two</a></li>
+                                            <li><a href="#">Menu Three</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="./about.html">About</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-4 col-md-4 col-lg-8 text-right mobile__menu__icon">
+                        <label id="mobile__menu__icon" for="isShowMobileMenu">
+                            <i class="fa-solid fa-bars"></i>
+                        </label>
+                    </div>
+
+                    <input type="checkbox" id="isShowMobileMenu" hidden>
+                    <label for="isShowMobileMenu" class="mobile__menu__fade">
+                    </label>
+                    <div class="mobile__menu__nav">
+                        <label for="isShowMobileMenu">
+                            <i class="fa-solid fa-xmark icon__close-menu"></i>
+                        </label>
+                        <ul>
+                            <li class="active"><a href="./index.html">Home</a></li>
+                            <li><a href="#">Buy</a></li>
+                            <li><a href="#">Rent</a></li>
+                            <li class="properties">
+                                <p href="#">Properties <label for="isShowProps">
+                                        <i class="icon__extend fa-solid fa-chevron-down"></i>
+                                    </label>
+
+                                </p>
+                                <input type="checkbox" id="isShowProps" hidden>
+                                <ul class="list__props">
+                                    <li><a href="#">Condo</a></li>
+                                    <li><a href="#">Property Land</a></li>
+                                    <li><a href="#">Commercial Building</a></li>
+                                    <li class="sub-menu">
+                                        <p href="#">Sub Menu
+                                            <label for="isShowSubs">
+
+                                                <i class="icon__extend fa-solid fa-chevron-down"></i>
+
+                                            </label>
+                                        </p>
+                                        <input type="checkbox" id="isShowSubs" hidden>
+                                        <ul>
+                                            <li><a href="#">Menu One</a></li>
+                                            <li><a href="#">Menu Two</a></li>
+                                            <li><a href="#">Menu Three</a></li>
+                                        </ul>
+
+                                    </li>
+                                </ul>
+
+                            </li>
+
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="./about.html">About</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="slider">
+            <div class="slider__fade"></div>
+
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+
+                        <div class="bg-img__slider1"></div>
+                        <div class="banner__details text-center w-100">
+                            <h1 class="text-white">About Homeland</h1>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+
+                        <div class="bg-img__slider2"></div>
+                        <div class="banner__details text-center w-100">
+                            <h1 class="text-white">About Homeland</h1>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+
+                        <div class="bg-img__slider3"></div>
+                        <div class="banner__details text-center w-100">
+                            <h1 class="text-white">About Homeland</h1>
+                        </div>
+                    </div>
+
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div id="about-company" class="section-content">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 mb-5">
+                    <div class="company-image">
+                        <img src="./asset/img/person/person-company.webp" alt="company-person">
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="company__desc">
+
+                        <h1><strong>Our Company</strong></h1>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus in cum odio.</span>
+                        <p>Illum repudiandae ratione facere explicabo. Consequatur dolor optio iusto, quos autem
+                            voluptate ea? Sunt laudantium fugiat, mollitia voluptate? Modi blanditiis veniam nesciunt
+                            architecto odit voluptatum tempore impedit magnam itaque natus!</p>
+                        <p><a href="#">
+                                Read more
+                            </a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="content-blog" class="content-person section-content">
+        <div class="container">
+            <div class="row content-desc__head text-center justify-content-center">
+                <div class="col-md-7 text-center">
+                    <h1><strong>LEADERSHIP</strong></h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero magnam officiis ipsa eum pariatur
+                        labore fugit amet eaque iure vitae, repellendus laborum in modi reiciendis quis! Optio minima
+                        quibusdam, laboriosam.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 blog__item">
+                    <img class="person-img" src="./asset/img/person/person1.webp" alt="home6">
+                    <div class="blog__info text-left">
+                        <h2 class="person-name">Megan Smith</h2>
+                        <p>Real Estate Agent</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim, ipsa exercitationem
+                            veniam
+                            quae sunt.</p>
+                        <div class="person-social">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-lg-4 blog__item">
+                    <img class="person-img" src="./asset/img/person/person2.webp" alt="person2">
+                    <div class="blog__info text-left">
+                        <h2 class="person-name">Brooke Cagle</h2>
+                        <p>Real Estate Agent</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim, ipsa exercitationem
+                            veniam
+                            quae sunt.</p>
+                        <div class="person-social">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-lg-4 blog__item">
+                    <img class="person-img" src="./asset/img/person/person3.webp" alt="person3">
+                    <div class="blog__info text-left">
+                        <h2 class="person-name">Philip Martin</h2>
+                        <p>Real Estate Agent</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim, ipsa exercitationem
+                            veniam
+                            quae sunt.</p>
+                        <div class="person-social">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="content-blog" class="section-content">
+        <div class="container">
+            <div class="row content-desc__head text-center justify-content-center">
+                <div class="col-md-7 text-center">
+                    <h1><strong>OUR AGENTS</strong></h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero magnam officiis ipsa eum pariatur
+                        labore fugit amet eaque iure vitae, repellendus laborum in modi reiciendis quis! Optio minima
+                        quibusdam, laboriosam.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 blog__item">
+                    <img class="person-img" src="./asset/img/person/person4.webp" alt="home6">
+                    <div class="blog__info text-left">
+                        <h2 class="person-name">Steven Ericson</h2>
+                        <p>Real Estate Agent</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim, ipsa exercitationem
+                            veniam
+                            quae sunt.</p>
+                        <div class="person-social">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-lg-4 blog__item">
+                    <img class="person-img" src="./asset/img/person/person5.webp" alt="person2">
+                    <div class="blog__info text-left">
+                        <h2 class="person-name">Nathan Dumlao</h2>
+                        <p>Real Estate Agent</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim, ipsa exercitationem
+                            veniam
+                            quae sunt.</p>
+                        <div class="person-social">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-lg-4 blog__item">
+                    <img class="person-img" src="./asset/img/person/person6.webp" alt="person3">
+                    <div class="blog__info text-left">
+                        <h2 class="person-name">Brooke Cagle</h2>
+                        <p>Real Estate Agent</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim, ipsa exercitationem
+                            veniam
+                            quae sunt.</p>
+                        <div class="person-social">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="about-question" class="section-content">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-8 question__desc text-center">
+                    <h1><strong>Frequently ask question</strong></h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis maiores quisquam saepe
+                        architecto error corporis aliquam. Cum ipsam a consectetur aut sunt sint animi, pariatur
+                        corporis, eaque, deleniti cupiditate officia.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8 question__list">
+                    <ul>
+                        <li class="question__item">
+                            <div class="question__header"  data-toggle="collapse" data-target="#collapseExample" aria-expanded="false">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <h3>
+                                    What is the name of your company.
+                                </h3>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quae cumque perspiciatis aperiam accusantium facilis provident aspernatur nisi optio debitis dolorum, est eum eligendi vero aut ad necessitatibus nulla sit labore doloremque magnam! Ex molestiae, dolor tempora, ad fuga minima enim mollitia consequuntur, necessitatibus praesentium eligendi officia recusandae culpa tempore eaque quasi ullam magnam modi quidem in amet. Quod debitis error placeat, tempore quasi aliquid eaque vel facilis culpa voluptate./p>
+                            </div>
+                        </li>
+                        <li class="question__item">
+                            <div class="question__header"  data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <h3>
+                                    How much pay for 3 months?
+                                </h3>
+                            </div>
+                            <div class="collapse" id="collapseExample2">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quae cumque perspiciatis aperiam accusantium facilis provident aspernatur nisi optio debitis dolorum, est eum eligendi vero aut ad necessitatibus nulla sit labore doloremque magnam! Ex molestiae, dolor tempora, ad fuga minima enim mollitia consequuntur, necessitatibus praesentium eligendi officia recusandae culpa tempore eaque quasi ullam magnam modi quidem in amet. Quod debitis error placeat, tempore quasi aliquid eaque vel facilis culpa voluptate.</p>
+                            </div>
+                        </li>
+                        <li class="question__item">
+                            <div class="question__header"  data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <h3>
+                                    Do I need to register?
+                                </h3>
+                            </div>
+                            <div class="collapse" id="collapseExample3">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quae cumque perspiciatis aperiam accusantium facilis provident aspernatur nisi optio debitis dolorum, est eum eligendi vero aut ad necessitatibus nulla sit labore doloremque magnam! Ex molestiae, dolor tempora, ad fuga minima enim mollitia consequuntur, necessitatibus praesentium eligendi officia recusandae culpa tempore eaque quasi ullam magnam modi quidem in amet. Quod debitis error placeat, tempore quasi aliquid eaque vel facilis culpa voluptate.</p>
+                            </div>
+                        </li>
+                        <li class="question__item">
+                            <div class="question__header"  data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <h3>
+                                    Who should I contact in case of support.
+                                </h3>
+                            </div>
+                            <div class="collapse" id="collapseExample4">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quae cumque perspiciatis aperiam accusantium facilis provident aspernatur nisi optio debitis dolorum, est eum eligendi vero aut ad necessitatibus nulla sit labore doloremque magnam! Ex molestiae, dolor tempora, ad fuga minima enim mollitia consequuntur, necessitatibus praesentium eligendi officia recusandae culpa tempore eaque quasi ullam magnam modi quidem in amet. Quod debitis error placeat, tempore quasi aliquid eaque vel facilis culpa voluptate.</p>
+                            </div>
+                        </li>
+
+
+
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="section-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 mb-5">
+                        <h3><strong>About Homeland</strong></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe pariatur reprehenderit vero
+                            atque, consequatur id ratione, et non dignissimos culpa? Ut veritatis, quos illum totam quis
+                            blanditiis, minima minus odio!</p>
+                    </div>
+                    <div class="col-lg-4 mb-5">
+                        <h3><strong>Navigations</strong></h3>
+                        <div class="navigation__list row justify-content-between">
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><a href="./index.html">Home</a></li>
+                                    <li><a href="#">Buy</a></li>
+                                    <li><a href="#">Rent</a></li>
+                                    <li><a href="#">Properties</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Term</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-5">
+                        <h3><strong>Follow us</strong></h3>
+                        <ul></ul>
+                        <li class="icon__item"><a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a></li>
+                        <li class="icon__item"><a href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a></li>
+                        <li class="icon__item"><a href="#">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a></li>
+                        <li class="icon__item"><a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-12">
+                        <p class="text-center">Copyright ©2022 All rights reserved | This template is made with &lt;3 by
+                            Colorlib</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>
